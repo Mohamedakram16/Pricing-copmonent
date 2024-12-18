@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.6s;
+    font-family: "Montserrat";
+}
+body {
+    background-image: url("bg-bottom.svg"), url("bg-top.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom, right top;
+    position: relative;
+    background-color: hsl(240, 78%, 98%);
+    height: 922px;
+}
+#the-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 75px;
+    justify-items: center;
+}
+#the-first-section {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+    justify-items: center;
+}
+#the-first-section h1 {
+    color: hsl(233, 13%, 49%);
+    font-size: 40px;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 22px;
+    align-items: center;
+}
+section p {
+    color: hsl(234, 14%, 74%);
+    font-weight: 600;
+    font-size: 18px;
+}
+#circle {
+    width: 55px;
+    height: 30px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    padding: 3px;
+}
+#circle:hover {
+    cursor: pointer;
+}
+#circle p {
+    height: 24px;
+    width: 24px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+#the-second-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+.offers {
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px;
+}
+.offers h3:first-of-type {
+    color: hsl(233, 13%, 49%);
+    margin-bottom: 25px;
+    text-align: center;
+}
+.dollars {
+    font-size: 60px;
+    color: hsl(232, 13%, 33%);
+    font-weight: 800;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.options {
+    display: grid;
+    grid-template-rows: repeat(3, 60px);
+    margin-bottom: 32px;
+}
+.options p:not(:first-of-type) {
+    border-bottom: 0.8px solid hsl(234, 14%, 74%);
+    display: grid;
+    align-content: center;
+    text-align: center;
+    color: hsl(233, 13%, 49%);
+    font-weight: 600;
+}
+.options p:first-of-type {
+    border-bottom: 0.6px solid hsl(234, 14%, 74%);
+    border-top: 0.8px solid hsl(234, 14%, 74%);
+    display: grid;
+    align-content: center;
+    text-align: center;
+    color: hsl(233, 13%, 49%);
+    font-weight: 600;
+}
+.offers button {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    font-weight: 600;
+}
+.offers button:hover {
+    background-color: white;
+    color: hsl(237, 63%, 64%);
+    border: 1px solid hsl(237, 63%, 64%);
+    cursor: pointer;
+    background-image: none;
+}
+#offers {
+    display: grid;
+    background-image: linear-gradient(to bottom right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 10px;
+    padding: 50px 30px 30px 30px;
+    height: 112%;
+    transform: translateY(-25px);
+}
+#offers h3:first-of-type {
+    color: white;
+    text-align: center;
+}
+#dollars {
+    font-size: 60px;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#options {
+    display: grid;
+    grid-template-rows: repeat(3, 60px);
+    margin-bottom: 32px;
+    color: white;
+}
+#options p:not(:first-of-type) {
+    border-bottom: 0.4px solid white;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-weight: 600;
+}
+#options p:first-of-type {
+    border-bottom: 0.4px solid white;
+    border-top: 0.4px solid white;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-weight: 600;
+}
+#offers button {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: hsl(237, 63%, 64%);
+    font-weight: 600;
+    transform: translateY(-15px);
+}
+#offers button:hover {
+    background-color: hsl(237, 63%, 64%);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
